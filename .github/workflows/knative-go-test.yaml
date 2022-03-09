@@ -68,7 +68,7 @@ jobs:
 
       - name: Test
         #run: go test -race $COVER_OPTS ./...
-        run: make test
+        run: go test ./...
 
       - if: steps.codecov-enabled.outputs.files_exists == 'true'
         name: Codecov
