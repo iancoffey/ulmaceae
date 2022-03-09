@@ -8,7 +8,8 @@ import (
 
 type tyHandler struct{}
 
-func (h tyHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+func (h tyHandler) ServeHTTP(w http.ResponseWriter,
+	r *http.Request) {
 	log.Printf("at=request path=%s", r.URL.Path)
 	w.WriteHeader(http.StatusOK)
 	fmt.Fprintf(w, "ty!")
