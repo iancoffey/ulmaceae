@@ -17,13 +17,7 @@
 
 name: Test
 
-on:
-
-  push:
-    branches: [ 'main', 'master', 'mkdocs' ]
-
-  pull_request:
-    branches: [ 'main', 'master', 'release-*', 'mkdocs' ]
+on: [push]
 
 jobs:
 

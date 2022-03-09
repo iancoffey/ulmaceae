@@ -17,9 +17,7 @@
 
 name: Boilerplate
 
-on:
-  pull_request:
-    branches: [ 'main', 'master', 'release-*', 'mkdocs' ]
+on: [push]
 
 jobs:
 
