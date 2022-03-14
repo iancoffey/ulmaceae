@@ -1,6 +1,0 @@
-[metadata.heroku]
-  root-package = "github.com/iancoffey/ulmaceae"
-
-[prune]
-  go-tests = true
-  unused-packages = true
